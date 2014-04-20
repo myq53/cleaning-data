@@ -1,7 +1,7 @@
 The given data comes divided into a training set and a test set, and contains 561 variables obtained from various statistical computations performed 
 on accelerometer and gyroscope measurements on 30 subjects wearing smartphones while engaged in 6 different activities (walking, walking upstairs,
 walking downstairs, sitting, standing, and laying).  Of the 561 variables, 33 are means of measurements, and 33 others are standard deviations; 
-we identified within these the list of variable names by the fact that their names contained the strings "mean()" and "std()", respectively.  More
+we identified these within the list of variable names by the fact that their names contained the strings "mean()" and "std()", respectively.  More
 explanation of the variables can be found in the file "features_info.txt" that was included in the original data set. 
 
 Our script "run_analysis.R" combines the training and test sets into one large data frame (named "merged"); extracts a subframe ("mergedMeanSD") 
