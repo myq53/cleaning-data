@@ -47,10 +47,10 @@ mergedMeanSD$Activity <- sub("_"," ",actNames[mergedActs[,1],2])
 #for each of the 180 subject-activity combinations.
 activityMeans <- sapply(activitySets,function (x){sapply(x,mean)})
 
-#Form a data frame "out" from the transpose of the matrix activityMeans, using 
+#Formd a data frame "out" from the transpose of the matrix activityMeans, using 
 #the row names from outrows and the column names from the original data.
 out <- data.frame(t(activityMeans), row.names=outrows)
 colnames(out)<-features[c(meanFeatures,sdFeatures),2]
 
 #Write the data frame "out" to the text file "output.txt".
-write.table(out, "output.txt", sep="\t",quote=FALSE)
+write.table(out, "output.txt", sep="\t",quote=FALSE,row.names=FALSE)
